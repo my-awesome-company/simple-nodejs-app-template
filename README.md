@@ -1,6 +1,13 @@
 ## Welcome!
 
-This is a NodeJS example app that will connect to GitHub's [Octocat API endpoint](https://api.github.com/octocat) and return the Zen quote of the day. E.g.:
+This repository contains a basic NodeJS server useful for demonstration purposes.
+The served webpage will  connect to GitHub's [Octocat API endpoint](https://api.github.com/octocat) and return the Zen quote of the day.
+
+Relevant packages used in this setup:
+
+- pug (templates)
+- fetch
+- mocha / nyc / codecov (unit tests with coverage report)
 
 ### Demo (sucess)
 
@@ -18,16 +25,14 @@ There are some built-in unit tests to ensure that everything can be verified.
 
 Please fork this repository and ensure you have a local working copy. You will need a working NodeJS environment. Get the latest stable version from https://nodejs.org/en/download/ or via your OS package manager (e.g. `brew` on Mac or `chocolatey` on Windows). 
 
-Setup:
+CI:
 
 ```
 npm install 
-```
-
-Tests:
-
-```
 npm run test
+npm run lint [optional]
+npm run report-coverage
+
 ```
 
 Run server (defaults to localhost:3000):
